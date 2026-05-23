@@ -4,7 +4,7 @@ A machine learning project that predicts whether water is safe for human consump
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Access to safe drinking water is a global public health challenge. This project uses the **Water Potability dataset** to build classification models that can automatically determine whether a water sample is potable (safe to drink) or not — based on 9 measurable water quality parameters.
 
@@ -16,7 +16,7 @@ Access to safe drinking water is a global public health challenge. This project 
 | **Target** | `Potability` — 0 (Not Potable) / 1 (Potable) |
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 water-potability-preprocessing/
@@ -32,7 +32,7 @@ water-potability-preprocessing/
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 The dataset contains **3,276 water samples** with the following features:
 
@@ -53,28 +53,28 @@ The dataset contains **3,276 water samples** with the following features:
 
 ---
 
-## 🧹 Part A — Data Preprocessing
+## Part A — Data Preprocessing
 
 ### Steps Performed
 
 **1. Data Cleaning**
-- ✅ **Missing Values** — filled using `fillna(median)` for `ph` (15%), `Sulfate` (23.8%), and `Trihalomethanes` (4.9%)
-- ✅ **Duplicates** — checked and removed duplicate rows
-- ✅ **Inconsistencies** — domain constraint checks (e.g. pH must be 0–14)
-- ✅ **Outliers** — detected using IQR method, treated using capping (Winsorisation)
+- **Missing Values** — filled using `fillna(median)` for `ph` (15%), `Sulfate` (23.8%), and `Trihalomethanes` (4.9%)
+- **Duplicates** — checked and removed duplicate rows
+- **Inconsistencies** — domain constraint checks (e.g. pH must be 0–14)
+- **Outliers** — detected using IQR method, treated using capping (Winsorisation)
 
 **2. Data Transformation**
-- ✅ **Feature Engineering** — created new features: `ph_deviation`, `is_safe_ph`, `hardness_solids_ratio`
-- ✅ **Feature Scaling** — applied StandardScaler, MinMaxScaler, and RobustScaler
-- ✅ **Train/Test Split** — 80% training / 20% testing with stratification
+- **Feature Engineering** — created new features: `ph_deviation`, `is_safe_ph`, `hardness_solids_ratio`
+- **Feature Scaling** — applied StandardScaler, MinMaxScaler, and RobustScaler
+- **Train/Test Split** — 80% training / 20% testing with stratification
 
 **3. Data Reduction**
-- ✅ **Feature Selection** — ANOVA F-Score ranking, top 7 features selected
-- ✅ **PCA** — dimensionality reduction retaining 98% variance
+- **Feature Selection** — ANOVA F-Score ranking, top 7 features selected
+- **PCA** — dimensionality reduction retaining 98% variance
 
 ---
 
-## 🤖 Part B — Machine Learning Models
+## Part B — Machine Learning Models
 
 ### Models Trained
 
@@ -98,7 +98,7 @@ The dataset contains **3,276 water samples** with the following features:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Option 1 — Google Colab (Recommended)
 1. Go to [colab.research.google.com](https://colab.research.google.com)
@@ -127,7 +127,7 @@ jupyter notebook
 
 ---
 
-## 📦 Libraries Used
+## Libraries Used
 
 ```python
 pandas          # data manipulation
@@ -139,7 +139,7 @@ scikit-learn    # machine learning models and preprocessing
 
 ---
 
-## 🌍 SDG Alignment
+## SDG Alignment
 
 This project supports the following United Nations Sustainable Development Goals:
 
