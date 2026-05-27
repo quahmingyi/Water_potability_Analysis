@@ -81,20 +81,20 @@ The dataset contains **3,276 water samples** with the following features:
 | Model | Description |
 |---|---|
 | Logistic Regression | Simple linear baseline classifier |
+| Decision Tree | Splits data using yes/no questions to form a tree structure |
 | Random Forest | Ensemble of decision trees |
 | Support Vector Machine (SVM) | Finds optimal decision boundary |
 | K-Nearest Neighbors (KNN) | Classifies by nearest neighbours |
-| XGBoost / Gradient Boosting | Powerful boosting ensemble |
+| Gradient Boosting | Powerful boosting ensemble |
 
 ### Hyperparameter Tuning
-- Used `GridSearchCV` and `RandomizedSearchCV` to find the best settings for each model
+- Used `GridSearchCV` to find the best settings for each model
 
 ### Evaluation Metrics
 - **Accuracy** — overall correct predictions
 - **Precision** — of predicted potable, how many are actually potable
 - **Recall** — of actual potable, how many were correctly detected
 - **F1-Score** — balance between precision and recall *(important due to class imbalance)*
-- **Confusion Matrix** — full breakdown of predictions per class
 
 ---
 
@@ -135,6 +135,8 @@ numpy           # numerical operations
 matplotlib      # data visualisation
 seaborn         # statistical visualisation
 scikit-learn    # machine learning models and preprocessing
+warnings        # to silence annoying warning messages
+
 ```
 
 ---
